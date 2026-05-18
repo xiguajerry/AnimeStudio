@@ -387,8 +387,21 @@ namespace AnimeStudio.CLI
             }
         }
 
-        public static void ExportAssets(string savePath, List<AssetItem> toExportAssets, AssetGroupOption assetGroupOption, ExportType exportType)
+        public static void ExportAssets(
+            string savePath, 
+            List<AssetItem> toExportAssets, string[] containerMap,
+            AssetGroupOption assetGroupOption, 
+            ExportType exportType)
         {
+            var map = new Dictionary<string, string>();
+            if (containerMap != null)
+            {
+                foreach (var item in containerMap)
+                {
+                    var split = item.Split("=");
+                    map.Add(split[0], split[1]);
+                }
+            }
             int toExportCount = toExportAssets.Count;
             int exportedCount = 0;
             foreach (var asset in toExportAssets)
@@ -397,7 +410,16 @@ namespace AnimeStudio.CLI
                 switch (assetGroupOption)
                 {
                     case AssetGroupOption.ByType: //type name
-                        exportPath = Path.Combine(savePath, asset.TypeString);
+                        string savePath0 = savePath;
+                        foreach (var item in map)
+                        {
+                            if (asset.Container.Contains(item.Key))
+                            {
+                                savePath0 = Path.Combine(savePath0, item.Value);
+                                break;
+                            }
+                        }
+                        exportPath = Path.Combine(savePath0, asset.TypeString);
                         break;
                     case AssetGroupOption.ByContainer: //container path
                         if (!string.IsNullOrEmpty(asset.Container))

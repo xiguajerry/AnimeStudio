@@ -73,21 +73,21 @@ namespace AnimeStudio.GUI
             tableLayoutPanel2.Controls.Add(loadSelected, 2, 0);
             tableLayoutPanel2.Controls.Add(exportSelected, 3, 0);
             tableLayoutPanel2.Controls.Add(relocateSource, 4, 0);
-            tableLayoutPanel2.Location = new System.Drawing.Point(6, 6);
-            tableLayoutPanel2.Margin = new Padding(6);
+            tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
+            tableLayoutPanel2.Margin = new Padding(4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new System.Drawing.Size(1585, 63);
+            tableLayoutPanel2.Size = new System.Drawing.Size(975, 39);
             tableLayoutPanel2.TabIndex = 3;
             // 
             // loadAssetMap
             // 
             loadAssetMap.Dock = DockStyle.Fill;
-            loadAssetMap.Location = new System.Drawing.Point(6, 6);
-            loadAssetMap.Margin = new Padding(6);
+            loadAssetMap.Location = new System.Drawing.Point(4, 4);
+            loadAssetMap.Margin = new Padding(4);
             loadAssetMap.Name = "loadAssetMap";
-            loadAssetMap.Size = new System.Drawing.Size(350, 51);
+            loadAssetMap.Size = new System.Drawing.Size(215, 31);
             loadAssetMap.TabIndex = 0;
             loadAssetMap.Text = "Load AssetMap";
             loadAssetMap.UseVisualStyleBackColor = false;
@@ -96,10 +96,10 @@ namespace AnimeStudio.GUI
             // clear
             // 
             clear.Dock = DockStyle.Fill;
-            clear.Location = new System.Drawing.Point(368, 6);
-            clear.Margin = new Padding(6);
+            clear.Location = new System.Drawing.Point(227, 4);
+            clear.Margin = new Padding(4);
             clear.Name = "clear";
-            clear.Size = new System.Drawing.Size(169, 51);
+            clear.Size = new System.Drawing.Size(103, 31);
             clear.TabIndex = 1;
             clear.Text = "Clear";
             clear.UseVisualStyleBackColor = false;
@@ -109,10 +109,10 @@ namespace AnimeStudio.GUI
             // 
             loadSelected.Dock = DockStyle.Fill;
             loadSelected.Enabled = false;
-            loadSelected.Location = new System.Drawing.Point(549, 6);
-            loadSelected.Margin = new Padding(6);
+            loadSelected.Location = new System.Drawing.Point(338, 4);
+            loadSelected.Margin = new Padding(4);
             loadSelected.Name = "loadSelected";
-            loadSelected.Size = new System.Drawing.Size(350, 51);
+            loadSelected.Size = new System.Drawing.Size(215, 31);
             loadSelected.TabIndex = 2;
             loadSelected.Text = "Load Selected";
             loadSelected.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@ namespace AnimeStudio.GUI
             // 
             exportSelected.Dock = DockStyle.Fill;
             exportSelected.Enabled = false;
-            exportSelected.Location = new System.Drawing.Point(911, 6);
-            exportSelected.Margin = new Padding(6);
+            exportSelected.Location = new System.Drawing.Point(561, 4);
+            exportSelected.Margin = new Padding(4);
             exportSelected.Name = "exportSelected";
-            exportSelected.Size = new System.Drawing.Size(441, 51);
+            exportSelected.Size = new System.Drawing.Size(270, 31);
             exportSelected.TabIndex = 3;
             exportSelected.Text = "Export Selected";
             exportSelected.UseVisualStyleBackColor = false;
@@ -134,10 +134,10 @@ namespace AnimeStudio.GUI
             // relocateSource
             // 
             relocateSource.Enabled = false;
-            relocateSource.Location = new System.Drawing.Point(1364, 6);
-            relocateSource.Margin = new Padding(6);
+            relocateSource.Location = new System.Drawing.Point(839, 4);
+            relocateSource.Margin = new Padding(4);
             relocateSource.Name = "relocateSource";
-            relocateSource.Size = new System.Drawing.Size(212, 49);
+            relocateSource.Size = new System.Drawing.Size(130, 31);
             relocateSource.TabIndex = 4;
             relocateSource.Text = "Relocate source";
             relocateSource.UseVisualStyleBackColor = false;
@@ -150,14 +150,14 @@ namespace AnimeStudio.GUI
             assetDataGridView.AllowUserToResizeRows = false;
             assetDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             assetDataGridView.Dock = DockStyle.Fill;
-            assetDataGridView.Location = new System.Drawing.Point(6, 220);
-            assetDataGridView.Margin = new Padding(6);
+            assetDataGridView.Location = new System.Drawing.Point(2, 136);
+            assetDataGridView.Margin = new Padding(2);
             assetDataGridView.Name = "assetDataGridView";
             assetDataGridView.ReadOnly = true;
             assetDataGridView.RowHeadersVisible = false;
             assetDataGridView.RowHeadersWidth = 51;
             assetDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            assetDataGridView.Size = new System.Drawing.Size(1585, 1071);
+            assetDataGridView.Size = new System.Drawing.Size(979, 489);
             assetDataGridView.TabIndex = 2;
             assetDataGridView.VirtualMode = true;
             assetDataGridView.CellValueNeeded += AssetDataGridView_CellValueNeeded;
@@ -172,15 +172,15 @@ namespace AnimeStudio.GUI
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel4, 0, 2);
-            tableLayoutPanel1.Location = new System.Drawing.Point(22, 26);
-            tableLayoutPanel1.Margin = new Padding(6);
+            tableLayoutPanel1.Location = new System.Drawing.Point(14, 16);
+            tableLayoutPanel1.Margin = new Padding(4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 75F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 75F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 64F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 75F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(1597, 1297);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 47F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 47F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 47F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(983, 627);
             tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel3
@@ -201,23 +201,23 @@ namespace AnimeStudio.GUI
             tableLayoutPanel3.Controls.Add(hashTextBox, 5, 0);
             tableLayoutPanel3.Controls.Add(filterSelectTypesBtn, 4, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new System.Drawing.Point(6, 81);
-            tableLayoutPanel3.Margin = new Padding(6);
+            tableLayoutPanel3.Location = new System.Drawing.Point(4, 51);
+            tableLayoutPanel3.Margin = new Padding(4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new System.Drawing.Size(1585, 63);
+            tableLayoutPanel3.Size = new System.Drawing.Size(975, 39);
             tableLayoutPanel3.TabIndex = 4;
             // 
             // sourceTextBox
             // 
             sourceTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             sourceTextBox.Enabled = false;
-            sourceTextBox.Location = new System.Drawing.Point(462, 6);
-            sourceTextBox.Margin = new Padding(6);
+            sourceTextBox.Location = new System.Drawing.Point(284, 4);
+            sourceTextBox.Margin = new Padding(4);
             sourceTextBox.Name = "sourceTextBox";
             sourceTextBox.PlaceholderText = "Source";
-            sourceTextBox.Size = new System.Drawing.Size(216, 39);
+            sourceTextBox.Size = new System.Drawing.Size(132, 27);
             sourceTextBox.TabIndex = 6;
             sourceTextBox.KeyPress += SourceTextBox_KeyPress;
             // 
@@ -225,11 +225,11 @@ namespace AnimeStudio.GUI
             // 
             pathTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pathTextBox.Enabled = false;
-            pathTextBox.Location = new System.Drawing.Point(690, 6);
-            pathTextBox.Margin = new Padding(6);
+            pathTextBox.Location = new System.Drawing.Point(424, 4);
+            pathTextBox.Margin = new Padding(4);
             pathTextBox.Name = "pathTextBox";
             pathTextBox.PlaceholderText = "PathID";
-            pathTextBox.Size = new System.Drawing.Size(216, 39);
+            pathTextBox.Size = new System.Drawing.Size(132, 27);
             pathTextBox.TabIndex = 7;
             pathTextBox.KeyPress += PathTextBox_KeyPress;
             // 
@@ -237,11 +237,11 @@ namespace AnimeStudio.GUI
             // 
             nameTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             nameTextBox.Enabled = false;
-            nameTextBox.Location = new System.Drawing.Point(6, 6);
-            nameTextBox.Margin = new Padding(6);
+            nameTextBox.Location = new System.Drawing.Point(4, 4);
+            nameTextBox.Margin = new Padding(4);
             nameTextBox.Name = "nameTextBox";
             nameTextBox.PlaceholderText = "Name";
-            nameTextBox.Size = new System.Drawing.Size(216, 39);
+            nameTextBox.Size = new System.Drawing.Size(132, 27);
             nameTextBox.TabIndex = 4;
             nameTextBox.KeyPress += NameTextBox_KeyPress;
             // 
@@ -249,11 +249,11 @@ namespace AnimeStudio.GUI
             // 
             containerTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             containerTextBox.Enabled = false;
-            containerTextBox.Location = new System.Drawing.Point(234, 6);
-            containerTextBox.Margin = new Padding(6);
+            containerTextBox.Location = new System.Drawing.Point(144, 4);
+            containerTextBox.Margin = new Padding(4);
             containerTextBox.Name = "containerTextBox";
             containerTextBox.PlaceholderText = "Container";
-            containerTextBox.Size = new System.Drawing.Size(216, 39);
+            containerTextBox.Size = new System.Drawing.Size(132, 27);
             containerTextBox.TabIndex = 5;
             containerTextBox.KeyPress += ContainerTextBox_KeyPress;
             // 
@@ -261,10 +261,10 @@ namespace AnimeStudio.GUI
             // 
             searchBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             searchBtn.Enabled = false;
-            searchBtn.Location = new System.Drawing.Point(1368, 4);
-            searchBtn.Margin = new Padding(6, 4, 6, 4);
+            searchBtn.Location = new System.Drawing.Point(840, 2);
+            searchBtn.Margin = new Padding(4, 2, 4, 2);
             searchBtn.Name = "searchBtn";
-            searchBtn.Size = new System.Drawing.Size(211, 55);
+            searchBtn.Size = new System.Drawing.Size(131, 35);
             searchBtn.TabIndex = 10;
             searchBtn.Text = "Search";
             searchBtn.UseVisualStyleBackColor = false;
@@ -274,21 +274,21 @@ namespace AnimeStudio.GUI
             // 
             hashTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             hashTextBox.Enabled = false;
-            hashTextBox.Location = new System.Drawing.Point(1146, 6);
-            hashTextBox.Margin = new Padding(6);
+            hashTextBox.Location = new System.Drawing.Point(704, 4);
+            hashTextBox.Margin = new Padding(4);
             hashTextBox.Name = "hashTextBox";
             hashTextBox.PlaceholderText = "Hash";
-            hashTextBox.Size = new System.Drawing.Size(210, 39);
+            hashTextBox.Size = new System.Drawing.Size(128, 27);
             hashTextBox.TabIndex = 8;
             hashTextBox.KeyPress += HashTextBox_KeyPress;
             // 
             // filterSelectTypesBtn
             // 
             filterSelectTypesBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            filterSelectTypesBtn.Location = new System.Drawing.Point(916, 2);
-            filterSelectTypesBtn.Margin = new Padding(4, 2, 4, 2);
+            filterSelectTypesBtn.Location = new System.Drawing.Point(562, 1);
+            filterSelectTypesBtn.Margin = new Padding(2, 1, 2, 1);
             filterSelectTypesBtn.Name = "filterSelectTypesBtn";
-            filterSelectTypesBtn.Size = new System.Drawing.Size(220, 59);
+            filterSelectTypesBtn.Size = new System.Drawing.Size(136, 37);
             filterSelectTypesBtn.TabIndex = 11;
             filterSelectTypesBtn.Text = "Select Types";
             filterSelectTypesBtn.UseVisualStyleBackColor = false;
@@ -304,22 +304,22 @@ namespace AnimeStudio.GUI
             tableLayoutPanel4.Controls.Add(loadMapTwoBtn, 0, 0);
             tableLayoutPanel4.Controls.Add(clearMapTwoBtn, 1, 0);
             tableLayoutPanel4.Controls.Add(secondMapFilter, 2, 0);
-            tableLayoutPanel4.Location = new System.Drawing.Point(6, 154);
-            tableLayoutPanel4.Margin = new Padding(6, 4, 6, 4);
+            tableLayoutPanel4.Location = new System.Drawing.Point(4, 96);
+            tableLayoutPanel4.Margin = new Padding(4, 2, 4, 2);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new System.Drawing.Size(1585, 56);
+            tableLayoutPanel4.Size = new System.Drawing.Size(975, 36);
             tableLayoutPanel4.TabIndex = 5;
             // 
             // loadMapTwoBtn
             // 
             loadMapTwoBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             loadMapTwoBtn.Enabled = false;
-            loadMapTwoBtn.Location = new System.Drawing.Point(6, 4);
-            loadMapTwoBtn.Margin = new Padding(6, 4, 6, 4);
+            loadMapTwoBtn.Location = new System.Drawing.Point(4, 2);
+            loadMapTwoBtn.Margin = new Padding(4, 2, 4, 2);
             loadMapTwoBtn.Name = "loadMapTwoBtn";
-            loadMapTwoBtn.Size = new System.Drawing.Size(516, 48);
+            loadMapTwoBtn.Size = new System.Drawing.Size(317, 32);
             loadMapTwoBtn.TabIndex = 0;
             loadMapTwoBtn.Text = "Load second map";
             loadMapTwoBtn.UseVisualStyleBackColor = false;
@@ -329,10 +329,10 @@ namespace AnimeStudio.GUI
             // 
             clearMapTwoBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             clearMapTwoBtn.Enabled = false;
-            clearMapTwoBtn.Location = new System.Drawing.Point(534, 4);
-            clearMapTwoBtn.Margin = new Padding(6, 4, 6, 4);
+            clearMapTwoBtn.Location = new System.Drawing.Point(329, 2);
+            clearMapTwoBtn.Margin = new Padding(4, 2, 4, 2);
             clearMapTwoBtn.Name = "clearMapTwoBtn";
-            clearMapTwoBtn.Size = new System.Drawing.Size(516, 48);
+            clearMapTwoBtn.Size = new System.Drawing.Size(317, 32);
             clearMapTwoBtn.TabIndex = 1;
             clearMapTwoBtn.Text = "Clear second map";
             clearMapTwoBtn.UseVisualStyleBackColor = false;
@@ -345,21 +345,21 @@ namespace AnimeStudio.GUI
             secondMapFilter.Enabled = false;
             secondMapFilter.FormattingEnabled = true;
             secondMapFilter.Items.AddRange(new object[] { "Assets Only in First Map", "Assets Only in Second Map", "Assets with Differences" });
-            secondMapFilter.Location = new System.Drawing.Point(1062, 4);
-            secondMapFilter.Margin = new Padding(6, 4, 6, 4);
+            secondMapFilter.Location = new System.Drawing.Point(654, 2);
+            secondMapFilter.Margin = new Padding(4, 2, 4, 2);
             secondMapFilter.Name = "secondMapFilter";
-            secondMapFilter.Size = new System.Drawing.Size(517, 40);
+            secondMapFilter.Size = new System.Drawing.Size(317, 28);
             secondMapFilter.TabIndex = 0;
             secondMapFilter.SelectedIndexChanged += secondMapFilter_SelectedIndexChanged;
             // 
             // AssetBrowser
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1642, 1348);
+            ClientSize = new System.Drawing.Size(1010, 659);
             Controls.Add(tableLayoutPanel1);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(6);
+            Margin = new Padding(4);
             Name = "AssetBrowser";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Asset Browser";

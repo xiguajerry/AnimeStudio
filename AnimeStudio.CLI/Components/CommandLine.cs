@@ -26,6 +26,7 @@ namespace AnimeStudio.CLI
                 optionsBinder.TypeFilter,
                 optionsBinder.NameFilter,
                 optionsBinder.ContainerFilter,
+                optionsBinder.ContainerNameMap,
                 optionsBinder.GameName,
                 optionsBinder.MapOp,
                 optionsBinder.MapType,
@@ -52,6 +53,7 @@ namespace AnimeStudio.CLI
         public string[] TypeFilter { get; set; }
         public Regex[] NameFilter { get; set; }
         public Regex[] ContainerFilter { get; set; }
+        public string[] ContainerNameMap { get; set; }
         public string GameName { get; set; }
         public MapOpType MapOp { get; set; }
         public ExportListType MapType { get; set; }
@@ -73,6 +75,7 @@ namespace AnimeStudio.CLI
         public readonly Option<string[]> TypeFilter;
         public readonly Option<Regex[]> NameFilter;
         public readonly Option<Regex[]> ContainerFilter;
+        public readonly Option<string[]> ContainerNameMap;
         public readonly Option<string> GameName;
         public readonly Option<MapOpType> MapOp;
         public readonly Option<ExportListType> MapType;
@@ -153,6 +156,7 @@ namespace AnimeStudio.CLI
 
                 return items.ToArray();
             }, false, "Specify container regex filter(s).") { AllowMultipleArgumentsPerToken = true };
+            ContainerNameMap = new Option<string[]>("--container_map", "Transform the container names when exporting") { AllowMultipleArgumentsPerToken = true };
             GameName = new Option<string>("--game", $"Specify Game.") { IsRequired = true };
             MapOp = new Option<MapOpType>("--map_op", "Specify which map to build.");
             MapType = new Option<ExportListType>("--map_type", "AssetMap output type.");
@@ -172,6 +176,7 @@ namespace AnimeStudio.CLI
 
             LoggerFlags.AddValidator(FilterValidator);
             TypeFilter.AddValidator(FilterValidator);
+            ContainerNameMap.AddValidator(FilterValidator);
             NameFilter.AddValidator(FilterValidator);
             ContainerFilter.AddValidator(FilterValidator);
             Key.AddValidator(result =>
@@ -240,6 +245,7 @@ namespace AnimeStudio.CLI
             TypeFilter = bindingContext.ParseResult.GetValueForOption(TypeFilter),
             NameFilter = bindingContext.ParseResult.GetValueForOption(NameFilter),
             ContainerFilter = bindingContext.ParseResult.GetValueForOption(ContainerFilter),
+            ContainerNameMap = bindingContext.ParseResult.GetValueForOption(ContainerNameMap),
             GameName = bindingContext.ParseResult.GetValueForOption(GameName),
             MapOp = bindingContext.ParseResult.GetValueForOption(MapOp),
             MapType = bindingContext.ParseResult.GetValueForOption(MapType),

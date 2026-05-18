@@ -186,7 +186,7 @@ namespace AnimeStudio.CLI
                         if (assetsManager.assetsFileList.Count > 0)
                         {
                             BuildAssetData(classTypeFilter, o.NameFilter, o.ContainerFilter, ref i);
-                            ExportAssets(o.Output.FullName, exportableAssets, o.GroupAssetsType, o.AssetExportType);
+                            ExportAssets(o.Output.FullName, exportableAssets, o.ContainerNameMap, o.GroupAssetsType, o.AssetExportType);
                         }
                         exportableAssets.Clear();
                         assetsManager.Clear();
